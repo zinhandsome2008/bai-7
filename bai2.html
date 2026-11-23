@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thành viên</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        form {
+            width: 520px;
+            margin: 25px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .row {
+            margin: 12px 0;
+        }
+
+        label {
+            display: inline-block;
+            width: 145px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 300px;
+            padding: 6px;
+        }
+
+        button {
+            padding: 7px 15px;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>ĐĂNG KÝ THÀNH VIÊN CLB CÔNG NGHỆ THÔNG TIN</h2>
+
+        <div class="row">
+            <label>Họ tên:</label>
+            <input type="text" placeholder="Nhập họ tên" required>
+        </div>
+
+        <div class="row">
+            <label>Tên đăng nhập:</label>
+            <input type="text" placeholder="Tên đăng nhập" required>
+        </div>
+
+        <div class="row">
+            <label>Mật khẩu:</label>
+            <input type="password" placeholder="Mật khẩu" required>
+        </div>
+
+        <div class="row">
+            <label>Gõ lại mật khẩu:</label>
+            <input type="password" placeholder="Nhập lại mật khẩu" required>
+        </div>
+
+        <div class="row">
+            <label>Giới tính:</label>
+            <input type="radio" name="gioitinh" checked> Nam
+            <input type="radio" name="gioitinh"> Nữ
+        </div>
+
+        <div class="row">
+            <label>Ngoại ngữ:</label>
+            <input type="checkbox"> Anh văn
+            <input type="checkbox"> Pháp văn
+            <input type="checkbox"> Hoa văn
+        </div>
+
+        <div class="row">
+            <label>Nghề nghiệp:</label>
+            <select>
+                <option>Bạn làm nghề gì</option>
+                <option>Học sinh, sinh viên</option>
+                <option>Giáo viên</option>
+                <option>Nhân viên</option>
+                <option>Khác</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Hình:</label>
+            <input type="file">
+        </div>
+
+        <div class="row">
+            <label>Sở thích:</label>
+            <textarea rows="4" placeholder="Nhập sở thích"></textarea>
+        </div>
+
+        <div style="text-align:center">
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Làm lại</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
